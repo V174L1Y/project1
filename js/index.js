@@ -8,13 +8,18 @@ let personalMovieDB = {
     privat: false
 };
 
-const   a = prompt("What was the last movie you watched?",""),
-        b = +prompt("Rate the movie", 0);
-        c = prompt("What was the last movie you watched?",""),
-        d = +prompt("Rate the movie", 0);
+// const   a = prompt("What was the last movie you watched?",""),
+//         b = +prompt("Rate the movie", 0);
+//         c = prompt("What was the last movie you watched?",""),
+//         d = +prompt("Rate the movie", 0);
 
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-console.log(personalMovieDB);
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
+// console.log(personalMovieDB);
 
+for(i = 1;i <= 2; i++){
+    const   a = prompt("What was the last movie you watched?",""),
+            b = +prompt("Rate the movie", 0);
+    personalMovieDB.movies[a] = b;
+}
