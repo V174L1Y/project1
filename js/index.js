@@ -22,8 +22,8 @@ let personalMovieDB = {
 
 function rememberMyFilms(){
     for(let i = 0; i < 2; i++ ){
-        const   a = prompt("What was the last movie you watched?", ""),
-                b = +prompt("Rate the movie", "");
+        const   a = prompt("What was the last movie you watched?", "").trim(),
+                b = +prompt("Rate the movie", "").trim();
         
         if(a !== null && b != null && a != "" && b != "" && a.length < 50){
             personalMovieDB.movies[a] = b;
